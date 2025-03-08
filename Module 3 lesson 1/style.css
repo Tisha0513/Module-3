@@ -1,0 +1,55 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: darksalmon;
+    color: aliceblue;
+
+}
+
+h1 {
+    color: blueviolet;
+
+}
+
+/* Attribute Selector */
+a {
+    color: deepskyblue;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: cornflowerblue;
+
+}
+
+/* Child Selector */
+ul>li {
+    font-weight: bold;
+}
+
+/* Sibling Selector */
+h1+p {
+    background-color: pink;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* :hover Pseudo-class */
+ul li:hover {
+    color: aquamarine;
+}
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(3) {
+    background-color: coral;
+}
+
+/* not(selector) Pseudo-class */
+p:not(:first-of-type) {
+    text-decoration: underline;
+}
+
+/* ::before Pseudo-element */
+ul li::before {
+    content: "😹 ";
+}
